@@ -33,3 +33,8 @@ caderno
 cebola
 brocolis
 guitarra
+hamburger
+pitaia
+aveia
+chiclete
+manga
