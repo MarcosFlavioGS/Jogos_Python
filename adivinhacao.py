@@ -34,11 +34,11 @@ def jogar():
 
         #for rodada in range (1, tentativas+1): #(trocado posteriormente o while por for)#While serve como um If, porém este repete o bloco enquanto o que recebe for verdadeiro
         while (rodada <= tentativas):    
-            print("Tentativa {} de {}".format( rodada, tentativas )) #String Interpolation #Para mudar a ordem dos parametros dentro das chaves basta colocar o número representante dentro das chaves({1} e {0})
+            print(f"Tentativa {rodada} de {tentativas}") #String Interpolation #Para mudar a ordem dos parametros dentro das chaves basta colocar o número representante dentro das chaves({1} e {0})
             #Depois relembrar as várias formas de usar o ".format" para organizar casas decimais ou zeros em números inteiros({:d} para inteiros{:f} para flutuantes float)
             chute_string = input("Digite um Número de 1 a 100:")
             chute = int(chute_string) #Converte o tipo de String para Inteiro
-            print("Você Respondeu:" , chute_string)
+            print(f"Você Respondeu:{chute_string}")
 
             if(chute < 1 or chute > 100):#Além de "or", existe também a variante "and" para adicionar uma condição
                 print("Chute um número de 1 a 100!!")
@@ -49,7 +49,7 @@ def jogar():
             menor = chute < numero_secreto
 
             if (acertou):
-                print("Acerto Miseravi! {} pontos pra você".format(pontos))
+                print(f"Acerto Miseravi! {pontos} pontos pra você)"
                 print("Fim de jogo")
                 print("Deseja jogar de novamente ?")
                 print("(1)Sim (2)Não")
