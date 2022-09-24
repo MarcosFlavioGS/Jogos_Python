@@ -63,7 +63,7 @@ def jogar():
 
             #print(palavra_secreta) #para testes mais rápidos
 
-            print("Você tem {} tentativas".format(tentativas))
+            print(f"Você tem {tentativas} tentativas")
 
             print("Sabe qual é a palavra? Gostaria de chutar?")
             tentar = int(input("(1) Sim (2) Não, quero chutar uma letra: "))
@@ -83,7 +83,7 @@ def jogar():
             elif(tentar == 2):
                         
 
-                print("Você tem {} tentativas".format(tentativas))
+                print(f"Você tem {tentativas} tentativas")
                 
                 chute = pedir_chute_letras()
 
@@ -100,9 +100,9 @@ def jogar():
                 print(letras_acertadas)
             if(acertou):
                 print("Você acertou !")
-                print("Parabéns!! Você fez {} pontos".format(tentativas ** 2))
+                print(f"Parabéns!! Você fez {tentativas ** 2} pontos")
             elif(enforcou):
-                print("Que pena, você foi enforcado!!! A palavra era: {}".format(palavra_secreta)) 
+                print(f"Que pena, você foi enforcado!!! A palavra era: {palavra_secreta}") 
 
         print("Você gostaria de jogar novamente ?")
         jogar_novamente = int(input("(1) Sim (2) Não "))
